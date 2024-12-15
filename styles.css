@@ -1,116 +1,129 @@
-/* General */
-body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #f4f4f9;
-    color: #333;
-    line-height: 1.6;
-}
 
-h1, h2, h3 {
-    color: #0044cc;
-}
+/* General */ 
+body { 
+    font-family: Arial, 
+    sans-serif; 
+    margin: 0; 
+    padding: 0; 
+    background-color: #f4f4f9; 
+    color: #333; 
+    line-height: 1.6; 
+    font-size: 16px; /* Estableciendo tamaño base para heredar */ 
+    } 
+    
+    h1, h2, h3 { 
+        color: #0044cc; 
+        margin: 10px 0; /* Asegura espaciado consistente */ 
+    } 
+    
+    a { 
+        color: #0044cc; 
+        text-decoration: none; 
+        transition: text-decoration 0.3s ease; /* Efecto de transición para enlaces */ 
+    
+    } 
+    
+    a:hover { 
+        text-decoration: underline; 
+        } 
+        
+        /* Encabezado */ 
+        
+        header { 
+            background-color: #0044cc; 
+            color: white; 
+            text-align: center; 
+            padding: 15px 0; 
+        } 
+        
+        header nav { 
+            margin-top: 10px; 
+        } 
+        
+        header nav a { 
+            margin: 0 10px; 
+            font-weight: bold; 
+        } 
+        
+        header nav a:hover { 
+            text-decoration: underline; 
+        } 
+        
+        /* Main */ 
+        main { 
+            padding: 20px; 
+        } 
+        
+        section { 
+            margin-bottom: 40px; 
+        } 
+        
+        section img { 
+            max-width: 100%; 
+            height: auto; 
+            display: block; 
+            margin: 10px 0; 
+        } 
+        
+        .image-gallery { 
+            display: flex; 
+            gap: 10px; } 
+            
+        .image-gallery img { 
+            flex: 1; 
+            height: 150px; 
+            object-fit: cover; 
+        } 
+        
+        /* Botones */ 
+        button { 
+            background-color: #0044cc; 
+            color: white; 
+            border: none; 
+            padding: 10px 15px; 
+            cursor: pointer; 
+            border-radius: 5px; 
+            margin-left: 100px; 
+            font-family: inherit; 
+            /* Hereda la fuente del body */ 
+        } 
+        
+        button:hover { 
+            background-color: #0033a1; 
+        } 
+        
+        /* Formulario */ 
+        form { 
+            background: #fff; 
+            padding: 15px; 
+            border-radius: 5px; 
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); 
+            font-family: inherit; /* Hereda la fuente del body */ 
+        } 
+        
+        form label { 
+            display: block;
+             margin: 10px 0 5px; 
+            } 
+            
+        form input, form textarea { 
+            width: 100%; 
+            padding: 8px; 
+            margin-bottom: 10px; 
+            border: 1px solid #ccc; 
+            border-radius: 5px; 
+            font-family: inherit; /* Hereda la fuente del body */ 
+        } 
+        
+        /* Pie de página */ 
+        footer { 
+            text-align: center; 
+            background: #0044cc; 
+            color: white; 
+            padding: 10px 0; 
+            margin-top: 20px; 
+            font-family: inherit; /* Hereda la fuente del body */ 
+        }
 
-a {
-    color: #0044cc;
-    text-decoration: none;
-}
 
-a:hover {
-    text-decoration: underline;
-}
-
-/* Encabezado */
-header {
-    background-color: #0044cc;
-    color: white;
-    text-align: center;
-    padding: 15px 0;
-}
-
-header nav {
-    margin-top: 10px;
-}
-
-header nav a {
-    margin: 0 10px;
-    color: white;
-    font-weight: bold;
-}
-
-header nav a:hover {
-    text-decoration: underline;
-}
-
-/* Main */
-main {
-    padding: 20px;
-}
-
-section {
-    margin-bottom: 40px;
-}
-
-section img {
-    max-width: 100%;
-    height: auto;
-    display: block;
-    margin: 10px 0;
-}
-
-.image-gallery {
-    display: flex;
-    gap: 10px;
-}
-
-.image-gallery img {
-    flex: 1;
-    height: 150px;
-    object-fit: cover;
-}
-
-/* Botones */
-button {
-    background-color: #0044cc;
-    color: white;
-    border: none;
-    padding: 10px 15px;
-    cursor: pointer;
-    border-radius: 5px;
-    margin-left: 100px;
-}
-
-button:hover {
-    background-color: #0033a1;
-}
-
-/* Formulario */
-form {
-    background: #fff;
-    padding: 15px;
-    border-radius: 5px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-}
-
-form label {
-    display: block;
-    margin: 10px 0 5px;
-}
-
-form input, form textarea {
-    width: 100%;
-    padding: 8px;
-    margin-bottom: 10px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-}
-
-/* Pie de página */
-footer {
-    text-align: center;
-    background: #0044cc;
-    color: white;
-    padding: 10px 0;
-    margin-top: 20px;
-}
+        
