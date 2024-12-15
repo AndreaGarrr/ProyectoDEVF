@@ -12,19 +12,6 @@ body {
     min-height: 100vh;
     }
     
-    h1, h2, h3 {
-    color: #0044cc;
-    }
-    
-    a {
-    color: #0044cc;
-    text-decoration: none;
-    }
-    
-    a:hover {
-    text-decoration: underline;
-    }
-    
     /* Encabezado */
     header {
     background-color: #0044cc;
@@ -36,11 +23,12 @@ body {
     align-items: center;
     }
     
+    /* Posicionamiento sticky en el header */
     header nav {
     margin-top: 10px;
     display: flex;
-    justify-content: center; /* Centra los enlaces horizontalmente */
-    gap: 20px; /* Espacio entre los enlaces */
+    justify-content: center;
+    gap: 20px;
     }
     
     header nav a {
@@ -58,15 +46,15 @@ body {
     display: flex;
     flex-direction: column;
     gap: 40px;
-    justify-content: flex-start; /* Alineación vertical en el contenedor principal */
     }
     
-    /* Sección: ¿Qué es la divulgación? */
+    /* Sección: ¿Qué es la divulgación científica? */
     section#que-es {
     display: flex;
     flex-direction: column;
     gap: 15px;
-    align-items: center; /* Centra los elementos dentro de la sección */
+    align-items: center;
+    position: relative; /* Permite la posición de elementos dentro de la sección */
     }
     
     section#que-es img {
@@ -76,65 +64,38 @@ body {
     margin: 10px 0;
     }
     
+    /* Sticky Box: Caja que permanece en la parte superior cuando se hace scroll */
+    .sticky-box {
+    position: sticky;
+    top: 0;
+    background-color: #0044cc;
+    color: white;
+    padding: 10px;
+    margin-bottom: 20px;
+    text-align: center;
+    }
+    
     /* Sección: Beneficios */
     section#beneficios {
     display: flex;
     flex-direction: column;
     gap: 20px;
-    align-items: center; /* Centra los elementos de la sección */
+    align-items: center;
     }
     
-    section#beneficios ul {
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-    justify-content: flex-start;
-    align-items: flex-start; /* Alinea los elementos de la lista a la izquierda */
-    }
-    
-    .image-gallery {
-    display: flex;
-    gap: 15px;
-    flex-wrap: wrap;
-    justify-content: center; /* Centra las imágenes en la galería */
-    align-items: center; /* Alinea las imágenes verticalmente */
-    }
-    
-    .image-gallery img {
-    flex: 1;
-    max-width: 150px;
-    height: 150px;
-    object-fit: cover;
-    }
-    
-    /* Sección: Ejemplos */
+    /* Sección de Ejemplos */
     section#ejemplos {
     display: flex;
     flex-direction: column;
     gap: 20px;
-    align-items: center; /* Centra los artículos en la sección */
+    align-items: center;
     }
     
     section#ejemplos article {
     display: flex;
     flex-direction: column;
-    align-items: center; /* Centra los títulos y enlaces dentro de los artículos */
+    align-items: center;
     text-align: center;
-    }
-    
-    /* Botones */
-    button {
-    background-color: #0044cc;
-    color: white;
-    border: none;
-    padding: 10px 15px;
-    cursor: pointer;
-    border-radius: 5px;
-    margin-left: 100px;
-    }
-    
-    button:hover {
-    background-color: #0033a1;
     }
     
     /* Formulario */
@@ -145,22 +106,9 @@ body {
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     display: flex;
     flex-direction: column;
-    align-items: center; /* Centra los elementos dentro del formulario */
+    align-items: center;
     justify-content: center;
     gap: 10px;
-    }
-    
-    form label {
-    display: block;
-    margin: 10px 0 5px;
-    }
-    
-    form input, form textarea {
-    width: 80%;
-    padding: 8px;
-    margin-bottom: 10px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
     }
     
     /* Pie de página */
